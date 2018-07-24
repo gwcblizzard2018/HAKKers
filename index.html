@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>tracking.js - face with camera</title>
+  <link rel="stylesheet" href="tracking.js-master/examples/assets/demo.css">
+
+  <script src="tracking.js-master/build/tracking-min.js"></script>
+  <script src="tracking.js-master/build/data/face-min.js"></script>
+  <script src="tracking.js-master/build/data/eye-min.js"></script>
+  <script src="tracking.js-master/build/data/mouth-min.js"></script>
+   <script src="../node_modules/dat.gui/build/dat.gui.min.js"></script>
+  <script src="tracking.js-master/examples/assets/stats.min.js"></script>
+
+</head>
+<body>
+  <div class="demo-title">
+    <p><a href="http://trackingjs.com" target="_parent">tracking.js</a> － get user's webcam and detect faces</p>
+  </div>
+
+  <div class="demo-frame">
+    <div class="demo-container">
+      <video id="video" width="320" height="240" preload autoplay loop muted></video>
+      <canvas id="canvas" width="320" height="240"></canvas>
+      <div style = "text-align:center">
+        <button class="button" onclick ="none()">off</button>
+        <button class="button" onclick ="nick1()">nick1</button>
+        <button class="button" onclick ="nick2()">nick2</button>
+        <button class="button" onclick ="nick3()">nick3</button>
+      <!--dont make it bigger; doesnt work as well -->
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
