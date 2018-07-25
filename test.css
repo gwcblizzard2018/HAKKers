@@ -1,3 +1,7 @@
+div.carousel {
+  perspective: 700px !important
+}
+
 img {
   clip-path: ellipse(100px 100px at 50% 50%);
   object-fit: cover;
@@ -7,6 +11,6 @@ img {
 
 img:hover {
     transition: 0.5s;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
