@@ -15,14 +15,14 @@ img:hover {
     transform: scale(1.1);
 }
 
-#myGlower {
+#myGlower1, #myGlower2, #myGlower3, #myGlower4, #myGlower5, #myGlower6, #myGlower7, #myGlower8, #myGlower9, #myGlower10, #myGlower11 {
     -webkit-transition: border 0.1s linear, box-shadow 0.1s linear !important;
        -moz-transition: border 0.1s linear, box-shadow 0.1s linear !important;
             transition: border 0.1s linear, box-shadow 0.1s linear !important;
             border-radius: 50% 50% 50% 50% !important
 }
 
-#myGlower.active {
+#myGlower1.active, #myGlower2.active, #myGlower3.active, #myGlower4.active, #myGlower5.active, #myGlower6.active, #myGlower7.active, #myGlower8.active, #myGlower9.active, #myGlower10.active, #myGlower11.active  {
     border-color: green;
     -webkit-box-shadow: 0 0 50px green !important;
        -moz-box-shadow: 0 0 50px green !important;
