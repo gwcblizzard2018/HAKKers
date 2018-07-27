@@ -1,0 +1,36 @@
+div.carousel {
+  perspective: 700px !important
+}
+
+img {
+  /* clip-path: ellipse(100px 100px at 50% 50%); */
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+
+img:hover {
+    transition: 0.5s;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#myGlower {
+    -webkit-transition: border 0.1s linear, box-shadow 0.1s linear !important;
+       -moz-transition: border 0.1s linear, box-shadow 0.1s linear !important;
+            transition: border 0.1s linear, box-shadow 0.1s linear !important;
+            border-radius: 50% 50% 50% 50% !important
+}
+
+#myGlower.active {
+    border-color: blue;
+    -webkit-box-shadow: 0 0 10px blue !important;
+       -moz-box-shadow: 0 0 10px blue !important;
+            box-shadow: 0 0 10px blue !important;
+            border-radius: 50% 50% 50% 50% !important
+}
+
+button {
+  background-color: transparent;
+  border-color: transparent;
+}
