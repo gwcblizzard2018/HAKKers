@@ -3,7 +3,7 @@ div.carousel {
 }
 
 img {
-  /* clip-path: ellipse(100px 100px at 50% 50%); */
+  clip-path: circle(100px 100px at 50% 50%);
   object-fit: cover;
   width: 250px;
   height: 250px;
@@ -23,10 +23,10 @@ img:hover {
 }
 
 #myGlower.active {
-    border-color: blue;
-    -webkit-box-shadow: 0 0 10px blue !important;
-       -moz-box-shadow: 0 0 10px blue !important;
-            box-shadow: 0 0 10px blue !important;
+    border-color: green;
+    -webkit-box-shadow: 0 0 50px green !important;
+       -moz-box-shadow: 0 0 50px green !important;
+            box-shadow: 0 0 50px green !important;
             border-radius: 50% 50% 50% 50% !important
 }
 
