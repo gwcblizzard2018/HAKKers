@@ -6,15 +6,40 @@
     img.src = '';
   }
 
+  function mikey(){
+    img.src = 'img/img copy/mikey.png';
+  }
+
   function nick1(){
     img.src = 'img/img copy/nick1.png';
   }
-  function nick2(){
-    img.src = 'img/img copy/nick2.png';
+  function chrisP(){
+    img.src = 'img/img copy/chrisP.png';
   }
   function nick3(){
     img.src = 'img/img copy/nick3.png';
   }
+  function chrisH(){
+    img.src = 'img/img copy/chrisH.png';
+  }
+  function jeffy(){
+    img.src = 'img/img copy/jeffy2.png';
+  }
+  function doge(){
+    img.src = 'img/img copy/doge.png';
+  }
+function sara(){
+  img.src ='img/img copy/sara2.png';
+}
+function mimi(){
+  img.src ='img/img copy/mimi.png';
+}
+function faith(){
+  img.src ='img/img copy/faith2.png';
+}
+function sandy(){
+  img.src='img/img copy/sandy2.png';
+}
 
     window.onload = function() {
       var video = document.getElementById('video');
@@ -37,3 +62,10 @@
       gui.add(tracker, 'initialScale', 1.0, 10.0).step(0.1);
       gui.add(tracker, 'stepSize', 1, 5).step(0.1);
     };
+    document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems);
+  var instance = M.Carousel.init({
+    fullWidth: true,
+  });
+});

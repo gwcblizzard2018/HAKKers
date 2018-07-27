@@ -5,34 +5,64 @@
   <title>tracking.js - face with camera</title>
   <link rel="stylesheet" href="tracking.js-master/examples/assets/demo.css">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-
-
-
   <script src="tracking.js-master/build/tracking-min.js"></script>
   <script src="tracking.js-master/build/data/face-min.js"></script>
   <script src="tracking.js-master/build/data/eye-min.js"></script>
   <script src="tracking.js-master/build/data/mouth-min.js"></script>
-   <script src="../node_modules/dat.gui/build/dat.gui.min.js"></script>
+  <script src="../node_modules/dat.gui/build/dat.gui.min.js"></script>
   <script src="tracking.js-master/examples/assets/stats.min.js"></script>
-<script src="pretty.jpg"></script>
+
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="test.css"></link>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </head>
 <body>
   <div class="demo-title">
-    <p><a href="http://trackingjs.com" target="_parent">tracking.js</a> － get user's webcam and detect faces</p>
+    <p><b>Click through the images for more masks!</b></p>
   </div>
-
   <div class="demo-frame">
     <div class="demo-container">
+
       <video id="video" width="320" height="240" preload autoplay loop muted></video>
       <canvas id="canvas" width="320" height="240"></canvas>
       <div style = "text-align:center">
-        <button class="button" onclick ="none()">off</button>
-        <button class="button" onclick ="nick1()">nick1</button>
+       <button class="button" onclick ="none()">off</button>
+        <!-- <button class="button" onclick ="nick1()">nick1</button>
         <button class="button" onclick ="nick2()">nick2</button>
-        <button class="button" onclick ="nick3()">nick3</button>
+        <button class="button" onclick ="nick3()">nick3</button> -->
+        <div class="carousel">
+      <a class="carousel-item" href="#one!">
+        <img onclick="mikey()" src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/pc/PCXJVQUOFS9L1519857176264.jpg"></a>
+      <a class="carousel-item" href="#two!">
+        <img onclick="jeffy()"src="https://cdn.blizzardwatch.com/wp-content/uploads/2017/01/jeff-kaplan-sad-face.jpg"></a>
+      <a class="carousel-item" href="#three!">
+        <img onclick="nick3()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Nicolas_Cage_2011_CC.jpg/220px-Nicolas_Cage_2011_CC.jpg"></a>
+      <a class="carousel-item" href="#four!">
+        <img onclick="chrisH()" src="https://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2017/08/2017-chris-hemsworth.jpg?itok=7G8ZoEe9"></a>
+      <a class="carousel-item" href="#five!">
+        <img onclick="chrisP()" src="https://i.ytimg.com/vi/bpvR4e-_tWM/maxresdefault.jpg"></a>
+      <a class="carousel-item" href="#six!">
+        <img onclick='doge()' src="https://i.kym-cdn.com/entries/icons/mobile/000/013/564/doge.jpg"></a>
+      <a class="carousel-item" href="#seven!">
+        <img onclick='sara()' src="https://pbs.twimg.com/profile_images/1013235675708059649/qKxs1WOq_400x400.jpg"></a>
+      <a class="carousel-item" href="#eight!">
+        <img onclick='mimi()' src="img/img copy/gradmimi.jpg"></a>
+      <a class="carousel-item" href="#nine!">
+        <img onclick='sandy()' src="img/img copy/sandy.jpg"></a>
+      <a class="carousel-item" href="#ten!">
+        <img onclick='faith()' src="img/img copy/faith.jpg"></a>
+      <a class="carousel-item" href="#eleven!">
+        <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/pc/PCXJVQUOFS9L1519857176264.jpg"></a>
+      <a class="carousel-item" href="#twelve!">
+        <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/pc/PCXJVQUOFS9L1519857176264.jpg"></a>
+
+
       <!--dont make it bigger; doesnt work as well -->
     </div>
   </div>
+
 
   <script src="main.js"></script>
 
