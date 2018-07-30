@@ -23,9 +23,7 @@ function glow(myid) {
     } else {
 
       var glow = document.getElementById(myid);
-      glow.removeAttribute('class');
-      console.log(glow);
-      //clearInterval(stuff);
+      glow.removeAttribute('class');      //clearInterval(stuff);
       first_click = true;
 
       return;
