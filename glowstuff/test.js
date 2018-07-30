@@ -8,27 +8,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 var first_click = true;
 var stuff;
-function glow() {
+function glow(myid) {
     if (first_click) {
 
         var i = 0;
-        var glow = document.getElementById('myGlower');
-        stuff = setInterval(function(){
-            if(i == 0) {
+        //var act = document.getElementById('myGlower').getElementsByClassName('carousel-item active');
+        //console.log(act);
+        var glow = document.getElementById(myid);
+
+
                 glow.setAttribute('class','active');
-                i++;
-            } else {
-                glow.removeAttribute('class');
-                i = 0;
-            }
-        },500);
+
         first_click = false;
     } else {
 
-      var glow = document.getElementById('myGlower');
+      var glow = document.getElementById(myid);
       glow.removeAttribute('class');
-      console.log(glow);
-      clearInterval(stuff);
+      //clearInterval(stuff);
       first_click = true;
 
       return;
