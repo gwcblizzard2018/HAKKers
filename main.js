@@ -1,3 +1,5 @@
+document.body.style.zoom="100%"
+
 var img = document.createElement('img')
 img.src ='';
 

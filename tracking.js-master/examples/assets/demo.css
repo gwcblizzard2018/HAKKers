@@ -121,7 +121,7 @@ img:hover {
     -webkit-transition: border 0.1s linear, box-shadow 0.1s linear !important;
        -moz-transition: border 0.1s linear, box-shadow 0.1s linear !important;
             transition: border 0.1s linear, box-shadow 0.1s linear !important;
-            border-radius: 50% 50% 50% 50% !important
+            border-radius: 50% 50% 50% 50% !important;
 }
 
 #myGlower1.active, #myGlower2.active, #myGlower3.active, #myGlower4.active, #myGlower5.active, #myGlower6.active, #myGlower7.active, #myGlower8.active, #myGlower9.active, #myGlower10.active, #myGlower11.active, #myGlower12.active, #myGlower13.active {
@@ -129,11 +129,12 @@ img:hover {
     -webkit-box-shadow: 0 0 50px #DA87FE   !important;
        -moz-box-shadow: 0 0 50px #DA87FE   !important;
             box-shadow: 0 0 50px #DA87FE   !important;
-            border-radius: 50% 50% 50% 50% !important
+            border-radius: 50% 50% 50% 50% !important;
 }
 
 button {
   background-color: transparent;
   border-color: transparent;
+    border-radius: 50% 50% 50% 50% !important;
 }
 /* #jeff { */

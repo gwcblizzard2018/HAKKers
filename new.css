@@ -2,7 +2,7 @@
 
 /* Full height image header */
 .bgimg-1 {
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
     background-image: url("./newBack.jpg");
     min-height: 100%;
@@ -21,3 +21,42 @@ body, html {
   font-family: "Monoton", cursive;
   /* color: white; */
 }
+img:hover {
+  filter: grayscale(0) !important;
+}
+img {
+  filter: grayscale(300%) !important;
+}
+
+.w3-greyscale-max,.w3-grayscale-max,.w3-hover-greyscale:hover,.w3-hover-grayscale:hover {
+    filter: grayscale(0) !important
+}
+
+.w3-greyscale,.w3-grayscale {
+    filter: grayscale(0) !important
+}
+
+.w3-greyscale-min,.w3-grayscale-min {
+    filter: grayscale(0) !important
+}
+
+.w3-sepia {
+    filter: sepia(0) !important
+}
+
+.w3-sepia-max,.w3-hover-sepia:hover {
+    filter: sepia(0) !important
+}
+
+.w3-sepia-min {
+    filter: sepia(0) !important
+  }
+
+  .newImg {
+    position: -webkit-sticky !important;
+    position: -moz-sticky !important;
+    position: -ms-sticky !important;
+    position: -o-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
+  }
