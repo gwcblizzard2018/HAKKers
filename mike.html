@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="new.css">
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<head>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card asdf" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide ">MASK ON | MASK OFF</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">CAMERA</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+</nav>
+
+<!-- -grayscale-min -->
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3" id="home">
+  <div class="w3-display-left w3-text" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small asdf">MASK ON  /  MASK OFF</span><br>
+    <span class="w3-xlarge">A new face filter experience</span>
+  </div>
+</header>
+
+<!-- Camera (About) Section (THIS IS WHERE WE ARE PUTTING THE CAMERA- DELETE THE CHARACTERS)-->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">CAMERA</h3>
+  <p class="w3-center w3-large">Choose your mask</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+<!-- About (TEAM) Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-xlarge">The girls behind this program</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="yellowall.jpg" alt="Arielle" style="width:100%">
+        <div class="w3-container">
+          <h3>Arielle</h3>
+          <p class="w3-opacity">Girls Who Code</p>
+          <p>Arielle is a junior in high school. She has always been fascinated with interactive programs, hence her magnetism and strong belief in "Mask On | Mask Off." Arielle hopes "Mask On | Mask Off" gives its users a sense of joy. Arielle's aspires to be a data scientist or software engineer. She hopes to attend USC or University of Michigan. Her hobbies include playing varsity volleyball and listening to Big Time Rush. </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team1.jpg" alt="Han" style="width:100%">
+        <div class="w3-container">
+          <h3>Han</h3>
+          <p class="w3-opacity">Girls Who Code</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="kayl.jpg" alt="Kayla" style="width:100%">
+        <div class="w3-container">
+          <h3>Kayla</h3>
+          <p class="w3-opacity">Girls Who Code</p>
+          <p>Kayla is a senior in high school. This project has been a joy for Kayla and she is excited for the world to experience "Mask On | Mask Off." She hopes to study computer science at Duke. Kayla aspires to one day become a software engineer or data scientist and inspire other girls to pursue computer science. Her hobbies include studying for the SAT and watching Jeopardy!</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="khatu.jpg" alt="Khatu" style="width:100%">
+        <div class="w3-container">
+          <h3>Khatu</h3>
+          <p class="w3-opacity">Girls Who Code</p>
+          <p>Khatu is a junior in high school. This project is a thrill for Khatu because she really hopes to promote self-expression and imagination towards each individual user. She believes that the fascination and vision of one's altered self-perception will facilitate the discovery of their identities. Khatu's aspirations lie in space and technology. She dreams of going to CalTech and pursuing a career at SpaceX. In her free time, Khatu enjoys binge-watching Netflix.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">7</span>
+    <br>Weeks
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">35+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">20</span>
+    <br>Computer Scientists
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">250+</span>
+    <br>Hours
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+</body>
+</html>
