@@ -3,20 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>tracking.js - face with camera</title>
-  <link rel="stylesheet" href="tracking.js-master/examples/assets/demo.css">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="tracking.js-master/examples/assets/demo.css">
   <script src="tracking.js-master/build/tracking-min.js"></script>
   <script src="tracking.js-master/build/data/face-min.js"></script>
   <script src="tracking.js-master/build/data/eye-min.js"></script>
   <script src="tracking.js-master/build/data/mouth-min.js"></script>
   <script src="../node_modules/dat.gui/build/dat.gui.min.js"></script>
   <script src="tracking.js-master/examples/assets/stats.min.js"></script>
-
 <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="test.css"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!--link rel="stylesheet" type="text/css" href="test.css"></link-->
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </head>
 <body>
   <div class="demo-title">
@@ -28,43 +27,40 @@
       <video id="video" width="320" height="240" preload autoplay loop muted></video>
       <canvas id="canvas" width="320" height="240"></canvas>
       <div style = "text-align:center">
-       <button class="button" onclick ="none()">off</button>
+       <!-- <button class="button" onclick ="none()">off</button> -->
         <!-- <button class="button" onclick ="nick1()">nick1</button>
         <button class="button" onclick ="nick2()">nick2</button>
         <button class="button" onclick ="nick3()">nick3</button> -->
         <div class="carousel">
       <a class="carousel-item" href="#one!">
-        <img onclick="mikey()" src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/pc/PCXJVQUOFS9L1519857176264.jpg"></a>
+        <button><img class='myGlower' id='myGlower1' onclick="glow(this.id, 'mikey.png')" src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/pc/PCXJVQUOFS9L1519857176264.jpg"></button></a>
       <a class="carousel-item" href="#two!">
-        <img onclick="jeffy()"src="https://cdn.blizzardwatch.com/wp-content/uploads/2017/01/jeff-kaplan-sad-face.jpg"></a>
+        <button><img class='myGlower' id='myGlower2' onclick="glow(this.id, 'jeffy2.png')" src="https://cdn.blizzardwatch.com/wp-content/uploads/2017/01/jeff-kaplan-sad-face.jpg"></button></a>
       <a class="carousel-item" href="#three!">
-        <img onclick="nick3()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Nicolas_Cage_2011_CC.jpg/220px-Nicolas_Cage_2011_CC.jpg"></a>
+        <button><img class='myGlower' id='myGlower3' onclick="glow(this.id, 'nick1.png')" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Nicolas_Cage_2011_CC.jpg/220px-Nicolas_Cage_2011_CC.jpg"></button></a>
       <a class="carousel-item" href="#four!">
-        <img onclick="chrisH()" src="https://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2017/08/2017-chris-hemsworth.jpg?itok=7G8ZoEe9"></a>
+        <button><img class='myGlower' id='myGlower4' onclick="glow(this.id, 'chrisH.png')" src="https://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2017/08/2017-chris-hemsworth.jpg?itok=7G8ZoEe9"></button></a>
       <a class="carousel-item" href="#five!">
-        <img onclick="chrisP()" src="https://i.ytimg.com/vi/bpvR4e-_tWM/maxresdefault.jpg"></a>
+        <button><img class='myGlower' id='myGlower5' onclick="glow(this.id, 'chrisP.png')" src="https://i.ytimg.com/vi/bpvR4e-_tWM/maxresdefault.jpg"></button></a>
       <a class="carousel-item" href="#six!">
-        <img onclick='doge()' src="https://i.kym-cdn.com/entries/icons/mobile/000/013/564/doge.jpg"></a>
+        <button><img class='myGlower' id='myGlower6' onclick="glow(this.id, 'doge.png')" src="https://i.kym-cdn.com/entries/icons/mobile/000/013/564/doge.jpg"></button></a>
       <a class="carousel-item" href="#seven!">
-        <img onclick='sara()' src="https://pbs.twimg.com/profile_images/1013235675708059649/qKxs1WOq_400x400.jpg"></a>
+        <button><img class="myGlower" id='myGlower7' onclick="glow(this.id, 'sara2.png')" src="https://pbs.twimg.com/profile_images/1013235675708059649/qKxs1WOq_400x400.jpg"></button></a>
       <a class="carousel-item" href="#eight!">
-        <img onclick='mimi()' src="img/img copy/gradmimi.jpg"></a>
+        <button><img class="myGlower" id='myGlower8' onclick="glow(this.id, 'mimi.png')" src="img/img copy/gradmimi.jpg"></button></a>
       <a class="carousel-item" href="#nine!">
-        <img onclick='sandy()' src="img/img copy/sandy.jpg"></a>
+        <button><img class='myGlower' id='myGlower9' onclick="glow(this.id, 'sandy2.png')" src="img/img copy/sandy.jpg"></button></a>
       <a class="carousel-item" href="#ten!">
-        <img onclick='faith()' src="img/img copy/faith.jpg"></a>
+        <button><img class='myGlower' id='myGlower10' onclick="glow(this.id, 'faith2.png')" src="img/img copy/faith.jpg"></button></a>
       <a class="carousel-item" href="#eleven!">
-        <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/pc/PCXJVQUOFS9L1519857176264.jpg"></a>
+        <button><img class='myGlower' id='myGlower11' onclick="glow(this.id, 'cat2.png')" src="img/img copy/cat.jpg"></button></a>
       <a class="carousel-item" href="#twelve!">
-        <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/pc/PCXJVQUOFS9L1519857176264.jpg"></a>
-
-
+        <button><img class='myGlower' id='myGlower12' onclick="glow(this.id, 'amandag.png')" src="img/img copy/amanda.jpg"></button></a>
+      <a class="carousel-item" href="#thirteen!">
+        <button><img class='myGlower' id='myGlower13' onclick="glow(this.id, 'rachelle.png')" src='img/img copy/rachelle.jpg'></button></a>
       <!--dont make it bigger; doesnt work as well -->
     </div>
   </div>
-
-
   <script src="main.js"></script>
-
 </body>
 </html>
