@@ -6,6 +6,7 @@
     background-size: cover;
     background-image: url("./newBack.jpg");
     min-height: 100%;
+
 }
 .w3-bar .w3-button {
     padding: 16px;
@@ -19,8 +20,9 @@ body, html {
 
 .asdf{
   font-family: "Monoton", cursive;
-  /* color: white; */
+  color: white;
 }
+
 img:hover {
   filter: grayscale(0) !important;
 }
@@ -52,11 +54,11 @@ img {
     filter: sepia(0) !important
   }
 
-  .newImg {
+  /* .newImg {
     position: -webkit-sticky !important;
     position: -moz-sticky !important;
     position: -ms-sticky !important;
     position: -o-sticky !important;
     position: sticky !important;
     top: 0 !important;
-  }
+  } */

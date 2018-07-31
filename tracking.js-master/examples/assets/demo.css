@@ -15,7 +15,7 @@
 font-family: 'Abel', sans-serif;
 }
 body {
-background: url("lines.png");
+background: url("finBack.jpg");
 }
 
 .demo-title {
@@ -62,9 +62,9 @@ background: url("lines.png");
   width: 100%;
   height: 600px;
   position: relative;
-
+  
     /* background: url("pretty.jpg"); */
-background: #FAE5D3;
+background: #F1F6F3;
   overflow: hidden;
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px;
